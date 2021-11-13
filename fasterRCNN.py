@@ -83,4 +83,4 @@ def object_detection_api(img_path, threshold=0.5, rect_th=3, text_size=3, text_t
 
 
 if __name__ == "__main__":
-    object_detection_api('datasets/coco/images/val2017/000000000139.jpg', threshold=0.5)
+    object_detection_api('datasets\coco\images\val2017\000000581781.jpg', threshold=0.5)
