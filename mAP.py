@@ -17,9 +17,9 @@ def get_img_id(file_name):
 if __name__ == '__main__':
     annType = ['segm', 'bbox', 'keypoints']     #set iouType to 'segm', 'bbox' or 'keypoints'
     annType = annType[1]         # specify type here
-    cocoGt_file = '/home/ss/data/coco2014/annotations/instances_val2014.json'
+    cocoGt_file = '/content/datasets/coco/annotations/instances_val2017.json'
     cocoGt = COCO(cocoGt_file)      #取得标注集中coco json对象
-    cocoDt_file = '/home/ss/darknet/results/coco_results.json'
+    cocoDt_file = '/content/fasterRCNN/val2017coco.json'
     imgIds = get_img_id(cocoDt_file)
     print(len(imgIds))
     cocoDt = cocoGt.loadRes(cocoDt_file)        #取得结果集中image json对象
